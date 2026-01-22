@@ -1,12 +1,13 @@
 import React from 'react';
 import { BENEFITS } from '../constants';
 import Reveal from './Reveal';
+import { MapPin, ExternalLink } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-zinc-950 relative">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+        <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
           <div>
             <Reveal>
               <h2 className="text-[33px] md:text-5xl font-bold text-white mb-6">
@@ -19,12 +20,50 @@ const About: React.FC = () => {
               </p>
             </Reveal>
             <Reveal delay={0.2}>
-              <p className="text-zinc-400 text-[15px] md:text-lg leading-relaxed">
+              <p className="text-zinc-400 text-[15px] md:text-lg leading-relaxed mb-8">
                 This special photography contest and exhibition will be held on <strong className="text-white">28–29 January</strong>, creating a platform for photographers to express their unique perspectives. Whether you capture landscapes, portraits, or street life, this is your stage.
               </p>
             </Reveal>
+
+            <Reveal delay={0.3}>
+              <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 hover:border-gold-500/30 transition-colors">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <MapPin className="text-gold-500" size={20} />
+                  Exhibition Venue
+                </h3>
+                <p className="text-zinc-300 text-[15px] leading-relaxed mb-4">
+                  The exhibition will take place at the <strong className="text-white">Tejgaon College Campus</strong>.
+                  <br />
+                  <span className="text-zinc-400 text-sm">16 Indira Road, Farmgate, Dhaka 1215</span>
+                </p>
+                
+                <div className="w-full h-48 bg-zinc-800 rounded-lg overflow-hidden mb-4 relative group">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.865860768915!2d90.38858382604505!3d23.75217128870933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a324021821%3A0x6d88f8c05704983!2sTejgaon%20College!5e0!3m2!1sen!2sbd!4v1705600000000!5m2!1sen!2sbd" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Tejgaon College Map"
+                    className="group-hover:filter-none transition-all duration-500"
+                  ></iframe>
+                </div>
+
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Tejgaon+College+Dhaka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gold-500 hover:text-gold-400 font-medium text-sm transition-colors"
+                >
+                  Get Directions <ExternalLink size={14} />
+                </a>
+              </div>
+            </Reveal>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          
+          <div className="grid grid-cols-2 gap-4 sticky top-24">
             <Reveal direction="left" delay={0.2} className="translate-y-8">
               <img 
                 src="https://picsum.photos/id/101/400/500" 

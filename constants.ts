@@ -18,10 +18,10 @@ if (deadline.getTime() < now.getTime()) {
 export const DEADLINE_DATE = deadline;
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'About', href: '#about' },
-  { label: 'Exhibition', href: '#exhibition' },
-  { label: 'Submission', href: '#submission' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'About', href: '/#about' },
+  { label: 'Submission', href: '/#submission' },
+  { label: 'Committee', href: '/committee' },
+  { label: 'FAQ', href: '/#faq' },
   { label: 'Contact', href: '#contact' },
 ];
 

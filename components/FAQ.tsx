@@ -26,7 +26,7 @@ const FAQ: React.FC = () => {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[33px] md:text-5xl font-bold text-white mb-6">Common Questions</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">Common Questions</h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-zinc-400 max-w-2xl mx-auto text-[13px] md:text-base">

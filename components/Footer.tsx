@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail } from 'lucide-react';
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
@@ -22,6 +22,17 @@ const Footer: React.FC = () => {
                 creative.tcpc@gmail.com
               </li>
               <li>16 Indira Road, Farmgate, Dhaka 1215</li>
+              <li className="pt-2">
+                <a 
+                  href="https://wa.me/message/FHFUBZTGIE5XB1" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-full text-[13px] font-bold hover:bg-[#128C7E] transition-colors"
+                >
+                  <FaWhatsapp size={18} />
+                  WhatsApp Message
+                </a>
+              </li>
             </ul>
           </div>
           
