@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { TbUserStar } from 'react-icons/tb';
 import { NAV_ITEMS, REGISTRATION_LINK } from '../constants';
 
 const Navbar: React.FC = () => {
@@ -22,10 +21,13 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-2 font-sans text-[21px] md:text-2xl font-bold text-white tracking-wider">
-          <TbUserStar className="w-8 h-8 text-gold-500" />
-          <span>Frames of Six<span className="text-gold-500">’</span></span>
-        </div>
+        <a href="#" className="flex items-center">
+          <img 
+            src="https://i.imgur.com/wy43MI5.png" 
+            alt="Frames of Six Logo" 
+            className="h-10 md:h-12 w-auto object-contain"
+          />
+        </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">

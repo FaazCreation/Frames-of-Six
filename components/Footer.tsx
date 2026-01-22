@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
           <div>
             <h5 className="text-white font-bold mb-4 uppercase tracking-wider text-[11px] md:text-sm">Follow Us</h5>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/tcpc.official" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-[#1877F2] hover:text-white transition-all">
+              <a href="https://www.facebook.com/share/1G9rUuiMLT/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-[#1877F2] hover:text-white transition-all">
                 <FaFacebook size={20} />
               </a>
               <a href="https://www.instagram.com/tcpc.official" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white transition-all">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-[#FF0000] hover:text-white transition-all">
+              <a href="https://youtube.com/@tejgaoncollegephotographyclub" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-[#FF0000] hover:text-white transition-all">
                 <FaYoutube size={20} />
               </a>
             </div>

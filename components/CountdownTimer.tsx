@@ -35,7 +35,7 @@ const CountdownTimer: React.FC = () => {
   });
 
   const TimeUnit = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center mx-2 md:mx-4">
+    <div className="flex flex-col items-center">
       <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-zinc-800/50 backdrop-blur border border-zinc-700 rounded-lg mb-2">
         <span className="text-[21px] md:text-3xl font-bold text-white font-sans">
           {value < 10 ? `0${value}` : value}
@@ -46,7 +46,7 @@ const CountdownTimer: React.FC = () => {
   );
 
   return (
-    <div className="flex justify-center flex-wrap py-8">
+    <div className="flex justify-center gap-3 sm:gap-4 md:gap-8 py-8">
       <TimeUnit value={timeLeft.days} label="Days" />
       <TimeUnit value={timeLeft.hours} label="Hours" />
       <TimeUnit value={timeLeft.minutes} label="Mins" />

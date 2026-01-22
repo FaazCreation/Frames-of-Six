@@ -5,6 +5,7 @@ import About from './components/About';
 import SubmissionDetails from './components/SubmissionDetails';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <FAQ />
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }
