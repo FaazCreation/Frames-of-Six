@@ -22,8 +22,8 @@ const FAQ: React.FC = () => {
           <div className="inline-flex items-center justify-center p-3 bg-zinc-900 rounded-full mb-4 border border-zinc-800">
             <HelpCircle className="w-6 h-6 text-gold-500" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <h2 className="text-[33px] md:text-5xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto text-[13px] md:text-base">
             Everything you need to know about Frames of Six 2.0. If you can't find the answer here, feel free to contact us.
           </p>
         </div>
@@ -42,7 +42,7 @@ const FAQ: React.FC = () => {
                 className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className={`font-medium text-lg ${openIndex === index ? 'text-white' : 'text-zinc-300'}`}>
+                <span className={`font-medium text-[15px] md:text-lg ${openIndex === index ? 'text-white' : 'text-zinc-300'}`}>
                   {faq.question}
                 </span>
                 <span className={`flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
@@ -60,7 +60,7 @@ const FAQ: React.FC = () => {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <div className="px-6 pb-6 pt-0 text-zinc-400 leading-relaxed border-t border-transparent">
+                  <div className="px-6 pb-6 pt-0 text-zinc-400 leading-relaxed border-t border-transparent text-[13px] md:text-base">
                      {faq.answer}
                   </div>
                 </div>

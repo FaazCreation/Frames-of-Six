@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-2 font-sans text-2xl font-bold text-white tracking-wider">
+        <div className="flex items-center gap-2 font-sans text-[21px] md:text-2xl font-bold text-white tracking-wider">
           <TbUserStar className="w-8 h-8 text-gold-500" />
           <span>Frames of Six<span className="text-gold-500">’</span></span>
         </div>
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
             <a 
               key={item.label} 
               href={item.href} 
-              className="text-lg font-medium text-zinc-300 hover:text-gold-500 block"
+              className="text-[15px] md:text-lg font-medium text-zinc-300 hover:text-gold-500 block"
               onClick={() => setIsOpen(false)}
             >
               {item.label}
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
             href={REGISTRATION_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full text-center py-3 bg-gold-500 text-black font-bold rounded mt-4"
+            className="w-full text-center py-3 bg-gold-500 text-black font-bold rounded mt-4 text-[13px] md:text-base"
           >
             Register Now
           </a>

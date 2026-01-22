@@ -37,11 +37,11 @@ const CountdownTimer: React.FC = () => {
   const TimeUnit = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center mx-2 md:mx-4">
       <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-zinc-800/50 backdrop-blur border border-zinc-700 rounded-lg mb-2">
-        <span className="text-2xl md:text-3xl font-bold text-white font-sans">
+        <span className="text-[21px] md:text-3xl font-bold text-white font-sans">
           {value < 10 ? `0${value}` : value}
         </span>
       </div>
-      <span className="text-xs md:text-sm text-zinc-400 uppercase tracking-widest">{label}</span>
+      <span className="text-[9px] md:text-sm text-zinc-400 uppercase tracking-widest">{label}</span>
     </div>
   );
 
