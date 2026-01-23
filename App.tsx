@@ -12,9 +12,9 @@ function App() {
   const isCommitteePage = window.location.pathname === '/committee';
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-white selection:bg-gold-500 selection:text-black">
+    <div className="min-h-screen bg-zinc-950 text-white selection:bg-gold-500 selection:text-black overflow-x-hidden w-full relative">
       <Navbar />
-      <main>
+      <main className="w-full">
         {isCommitteePage ? (
           <Committee />
         ) : (

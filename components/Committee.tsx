@@ -13,7 +13,7 @@ const COMMITTEE_MEMBERS = [
 
 const Committee: React.FC = () => {
   return (
-    <section id="committee" className="min-h-screen pt-32 pb-20 bg-zinc-950 relative">
+    <section id="committee" className="min-h-screen pt-32 pb-20 bg-zinc-950 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <Reveal>

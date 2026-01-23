@@ -5,7 +5,7 @@ import { MapPin, ExternalLink } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-zinc-950 relative">
+    <section id="about" className="py-20 bg-zinc-950 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
           <div>
